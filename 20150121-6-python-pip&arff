@@ -1,0 +1,24 @@
+安装python的包管理工具andpython的arff包
+
+---------------------------------------------------------------
+安装python的包管理工具
+sudo apt-get install python-pip
+---------------------------------
+安装后
+whereos pip
+pip: /usr/bin/pip /usr/bin/X11/pip /usr/share/man/man1/pip.1.gz
+which pip
+/usr/bin/pip
+------------------------------------------------------------------
+
+安装python的包
+arff0.9
+sudo pip install arff
+------------------
+安装后
+pip show arff 
+---
+Name: arff
+Version: 0.9
+Location: /usr/local/lib/python2.7/dist-packages
+Requires: 

@@ -1,0 +1,6 @@
+安装WEKA
+1.将下载的文件至/home/zhangfanlong/CloneTools
+2.解压缩到前置置置
+
+3.sudo cp -r [the file path] /usr/local
+sudo cp -r weka-3-6-12/ /usr/local/

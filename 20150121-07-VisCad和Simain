@@ -1,0 +1,5 @@
+安装VisCad和Simain
+1.将下载的文件至/home/zhangfanlong/CloneTools
+2.解压缩到前置置置
+3.sudo cp -r [the file path] /usr/local
+

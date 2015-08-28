@@ -1,0 +1,86 @@
+安装NiCad
+-----------------------------------------------------------------------
+1、网址
+location:
+/home/zhangfanlong/CloneTools/Nicad
+
+NiCad的安装与下载：
+http://www.txl.ca/nicaddownload.html
+下载需要的文件
+NiCad is a flexible TXL-based hybrid language-sensitive / text comparison software clone detection system developed by James R. Cordy and Chanchal K. Roy based on Chanchal's PhD thesis work. NiCad3 is a significantly new implementation with many fundamental improvements.
+NiCad基于TXL的，也要安装TXL
+http://www.txl.ca/ndownload.html
+下载需要的安装文件
+FreeTXL is provided by the TXL Project of the Source Transformation Laboratory at Queen's University. Designed to be free for any use and freely distributable to all platforms, FreeTXL is an XML-based TXL compiler/interpreter that can handle any kind of transformation task, no matter how big or complex.
+
+-------------------------------------------------------------------------------------------------
+1.安装TXL
+解压
+按照出README
+注意sudo为所有用户安装
+学习与使用详见README
+
+Step 1. Install TXL
+
+    To install TXL on your system, run the ./InstallTxl command
+    script in this directory.
+>>sudo ./installTxl
+
+    If you run the script as the superuser (root), the script will
+    install TXL globally for all users of the system in the directory
+    /usr/local/bin. 
+
+
+
+-----------------------------------------------------------------------------------------------
+2.安装Nicad
+--------------------------------------------------------------------------------------
+解压
+根据readme，为全部用户添加设置nicad
+两个主要的命令名字不一样
+"nicad3" and "nicad3cross" 需要进行替换
+---------------------------------------------------------
+Installing NiCad3
+-----------------
+NiCad3 can be installed on Ubuntu, Mandriva, Mac OS X and other Unix-like systems with a GCC compiler and a FreeTXL distribution.
+
+0. NiCad3 requires that FreeTXL 10.5i or later be installed on your system.  
+   FreeTXL can be downloaded from: 
+      http://www.txl.ca/
+
+   Install TXL 10.5i or later before proceeding.
+1. NiCad3 optimizes by using precompiled TXL programs.  Use the command:
+      make
+
+   in this directory to precompile all NiCad3 tools and TXL programs before 
+   installing NiCad3.  
+
+   If you are not planning to install NiCad3 for everyone on your system, 
+   and just want to use it yourself in this directory, you can stop here
+   and move on to "Testing NiCad3" below.
+
+2. To install NiCad3 for use by everyone on your system, copy the entire
+   contents of this directory to any place where it can reside permanently.  
+   On most systems the appropriate place would be /usr/local/lib/nicad.
+
+      sudo mkdir /usr/local/lib/nicad
+      sudo cp -r . /usr/local/lib/nicad
+
+3. Edit the command scripts  "nicad3" and "nicad3cross" in this directory
+   to specify the directory where you installed NiCad3, and the kind of
+   your system.  For example, on an Ubuntu system where you put NiCad3 in
+   /usr/local/lib/nicad, you would modify the scripts to say:
+
+      LIB=/usr/local/lib/nicad
+      SYS=Ubuntu
+
+   At present possible values for "SYS" are Ubuntu, MacOSX, and Mandriva.
+   If you are in doubt or your Linux system is not listed, use "Ubuntu".
+
+4. Copy the edited "nicad3" and "nicad3cross" scripts to any "bin" 
+   directory which is on the command search path of the intended users
+   of NiCad3.  On most systems the appropriate place  would be /usr/local/bin.
+
+      cp nicad3 nicad3cross" /usr/local/bin
+
+
